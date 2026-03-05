@@ -1,7 +1,9 @@
-# Auto MPG — KNN regression demo
+﻿[![CI](https://github.com/dh-kt/auto-mpg-knn/actions/workflows/ci.yml/badge.svg)](https://github.com/dh-kt/auto-mpg-knn/actions/workflows/ci.yml)
+
+# Auto MPG вЂ” KNN regression demo
 
 Cleaned reproduction of ISL Chapter 3 using the Auto dataset.
-- End-to-end: EDA → preprocessing → KNN CV → distance-weighted KNN → evaluation → API → Docker.
+- End-to-end: EDA в†’ preprocessing в†’ KNN CV в†’ distance-weighted KNN в†’ evaluation в†’ API в†’ Docker.
 - Use `model_data/` to store trained artifacts (scaler.joblib, knn_weighted.joblib).
 
 Quickstart (local):
@@ -15,3 +17,4 @@ Quickstart (local):
 Notes:
 - Consider adding `model_data/` to `.gitignore` if prefer to not commit model binaries.
 - See `notebooks/01_auto_knn_clean.ipynb` for the cleaned analysis.
+
