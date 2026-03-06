@@ -2,12 +2,17 @@
 
 # Auto MPG KNN regression demo
 Implemented a reproducible K‑Nearest Neighbors regression pipeline on the ISL Auto dataset: cleaned notebook, KNN tuned via cross‑validation (best_k = 21), model artifacts, and a production-ready FastAPI prediction endpoint packaged with Docker. CI (GitHub Actions) runs tests; model artifacts are published as a GitHub Release for reviewers.
-Technical highlights (short bullets you can include in README or profile)
+
+Technical highlights 
 Trained a distance‑weighted KNN (best_k = 21); test RMSE ≈ 4.10, R² ≈ 0.67.
-Reproducible pipeline: cleaned Colab notebook, saved artifacts (scaler.joblib, knn_weighted.joblib), and model_data/summary.json.
-Production-ready serving: FastAPI endpoint (/predict) validated locally and packaged with Docker.
-Continuous integration: GitHub Actions workflow runs pytest with CI-friendly dummy artifacts.
-Release assets: model binaries uploaded to GitHub Releases with SHA256 checksums for integrity.
+Reproducible pipeline: 
+1. cleaned Colab notebook, saved artifacts (scaler.joblib, knn_weighted.joblib), and model_data/summary.json.
+
+2. Production-ready serving: FastAPI endpoint (/predict) validated locally and packaged with Docker.
+
+3. Continuous integration: GitHub Actions workflow runs pytest with CI-friendly dummy artifacts.
+
+4. Release assets: model binaries uploaded to GitHub Releases with SHA256 checksums for integrity.
 
 Cleaned reproduction of ISL Chapter 3 using the Auto dataset.
 - End-to-end: EDA в†’ preprocessing в†’ KNN CV в†’ distance-weighted KNN в†’ evaluation в†’ API в†’ Docker.
